@@ -1,0 +1,49 @@
+lati		longitud
+GUATAPE
+6.224331, -75.197122 
+6.228073, -75.193758
+6.234815, -75.195872 izq
+6.246944, -75.192731 der
+6.249814, -75.184046 der
+6.260827, -75.195057 izq
+
+
+
+Bello
+
+6.342520, -75.546081
+6.342690, -75.545476
+6.343166, -75.545544 izq
+6.342755, -75.544833 der
+6.342891, -75.544322 izq
+6.343656, -75.545585 izq
+6.344065, -75.545663 der
+
+
+
+______________________________
+
+Los datos de arriba son datos de prueba los cuales se pueden encontrar en el cogido.
+
+El archivo proceso.py tiene 3 funcionalidades principales.
+La funcion nose debe ser declarada con un nombre mas adecuado.
+
+* En general recibe la funcion recibe una lista de nodos los cuales son posiciones geograficas con el siguiente orden (latitude, longitude).
+
+Funciones:
+
+1. get_distances(): Esta funcion se encarga de obtener las distancias aproximadas con un metedo matematica de aproximacion en base a la peculiaridad algo esferica de la tierra. Esta funcion recibe una lista de posiciones geograficas y devuelve n-1 datos los cuales corresponden a las distancias entre puntos a - b.
+
+2. get_angles(): Esta funcion se encarga de encontrar los angulos entre vectores, un vector se compone de dos puntos. El angulo que se encuentra es entre 3 posiciones consecutivas a,b,c. 
+Las cuales forman dos vectores AB y BC, dado estos dos vectores se encuentra la el angulo entre estos
+
+3. get_cartesian_points():  Esta funcion recibe una lista de posiciones geograficas y se encarga de llevar esto a un plano cartesiano, de manera que se pueda visualizar, esto se hace indexando el primer punto en la posicion (0,0) y a partir de esto ir organizando el resto de puntos.
+
+
+De igual forma el codigo esta documentado y especifica que se debe enviar por parametro y que devuelve.
+
+
+Para correr el codigo:
+$ python proceso.py
+
+
